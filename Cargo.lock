@@ -108,7 +108,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "et"
+name = "epoch-time"
 version = "0.1.0"
 dependencies = [
  "clap",

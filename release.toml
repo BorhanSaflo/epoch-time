@@ -1,0 +1,2 @@
+pre-release-hook = ["sh", "-c", "git-cliff -o CHANGELOG.md --tag {{version}} && git add CHANGELOG.md"]
+

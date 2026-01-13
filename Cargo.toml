@@ -3,8 +3,20 @@ name = "epoch-time"
 version = "0.1.0"
 edition = "2024"
 description = "Print or manipulate Unix epoch timestamps"
-authors = ["Epoch Time Contributors"]
+authors = ["Borhan Saflo"]
 license = "MIT"
+repository = "https://github.com/BorhanSaflo/epoch-time"
+documentation = "https://github.com/BorhanSaflo/epoch-time#readme"
+homepage = "https://github.com/BorhanSaflo/epoch-time#readme"
+readme = "README.md"
+
+[[bin]]
+name = "et"
+path = "src/main.rs"
+
+[lib]
+name = "et"
+path = "src/lib.rs"
 
 [dependencies]
 clap = { version = "4", features = ["derive"] }
@@ -14,3 +26,7 @@ thiserror = "2"
 [profile.release]
 lto = true
 strip = true
+
+[profile.dist]
+inherits = "release"
+lto = "thin"
