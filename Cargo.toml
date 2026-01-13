@@ -1,0 +1,16 @@
+[package]
+name = "epoch-time"
+version = "0.1.0"
+edition = "2024"
+description = "Print or manipulate Unix epoch timestamps"
+authors = ["Epoch Time Contributors"]
+license = "MIT"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+time = { version = "0.3", features = ["formatting", "parsing", "macros"] }
+thiserror = "2"
+
+[profile.release]
+lto = true
+strip = true
