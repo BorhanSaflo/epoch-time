@@ -8,8 +8,8 @@ use et::{apply_duration, format_iso, is_duration, now, parse_epoch, parse_iso, D
 #[command(
     name = "et",
     version,
-    about = "Print or manipulate Unix epoch timestamps.",
-    long_about = "Print or manipulate Unix epoch timestamps.\n\n\
+    about = "A CLI tool to print and manipulate Unix epoch timestamps.",
+    long_about = "A CLI tool to print and manipulate Unix epoch timestamps.\n\n\
                   DURATION UNITS\n  \
                     s    seconds\n  \
                     m    minutes (60s)\n  \

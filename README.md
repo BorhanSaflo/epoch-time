@@ -1,11 +1,6 @@
-# epoch-time
+# epoch-time (et)
 
-Print or manipulate Unix epoch timestamps.
-
-## Description
-
-`et` (epoch time) is a CLI tool that prints and manipulates Unix epoch timestamps. All operations use
-UTC. Timestamps are integers representing seconds since 1970-01-01T00:00:00Z.
+epoch-time is a CLI tool that prints and manipulates Unix epoch timestamps. All operations use UTC. Timestamps are integers representing seconds since 1970-01-01T00:00:00Z.
 
 With no arguments, print the current epoch. With a duration argument,
 apply the offset to the current epoch. With an epoch and duration,

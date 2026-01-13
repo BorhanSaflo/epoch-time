@@ -1,5 +1,5 @@
 {
-  description = "Print or manipulate Unix epoch timestamps";
+  description = "A CLI tool to print and manipulate Unix epoch timestamps";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
@@ -24,7 +24,7 @@
             };
 
             meta = with pkgs.lib; {
-              description = "Print or manipulate Unix epoch timestamps";
+              description = "A CLI tool to print and manipulate Unix epoch timestamps";
               homepage = "https://github.com/BorhanSaflo/epoch-time";
               license = licenses.mit;
               maintainers = [ ];

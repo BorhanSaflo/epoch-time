@@ -2,7 +2,7 @@
 name = "epoch-time"
 version = "0.1.0"
 edition = "2024"
-description = "Print or manipulate Unix epoch timestamps"
+description = "A CLI tool to print and manipulate Unix epoch timestamps"
 authors = ["Borhan Saflo"]
 license = "MIT"
 repository = "https://github.com/BorhanSaflo/epoch-time"
