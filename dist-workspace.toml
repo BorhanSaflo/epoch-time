@@ -32,3 +32,8 @@ runner = "ubuntu-24.04"
 [dist.github-custom-runners.x86_64-pc-windows-msvc]
 runner = "windows-2025"
 
+[dist.github-custom-runners.aarch64-apple-darwin]
+runner = "macos-14"
+
+[dist.github-custom-runners.x86_64-apple-darwin]
+runner = "macos-15-intel"
