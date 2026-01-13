@@ -33,6 +33,30 @@ brew tap BorhanSaflo/epoch-time
 brew install et
 ```
 
+### Using Nix
+
+Run directly without installing:
+
+```bash
+nix run github:BorhanSaflo/epoch-time
+```
+
+Install to your profile:
+
+```bash
+nix profile install github:BorhanSaflo/epoch-time
+```
+
+Or add to your Nix configuration:
+
+```nix
+{
+  inputs.epoch-time.url = "github:BorhanSaflo/epoch-time";
+}
+```
+
+Then add `inputs.epoch-time.packages.${system}.default` to your packages.
+
 ### Build from source
 
 Clone the repository and build with Cargo:
