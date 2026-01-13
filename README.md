@@ -14,6 +14,36 @@ apply the offset to the given epoch.
 When standard input is not a terminal, read epoch timestamps from
 stdin (one per line) and apply any duration offset to each.
 
+## Installation
+
+### Using Cargo
+
+```bash
+cargo install epoch-time
+```
+
+### Using Installers
+
+Download pre-built binaries from the [GitHub Releases](https://github.com/BorhanSaflo/epoch-time/releases) page.
+
+### Using brew
+
+```bash
+brew tap BorhanSaflo/epoch-time
+brew install et
+```
+
+### Build from source
+
+Clone the repository and build with Cargo:
+
+```bash
+git clone https://github.com/BorhanSaflo/epoch-time.git
+cd epoch-time
+cargo build --release
+# The binary will be available at target/release/et
+```
+
 ## Motivation
 
 I needed a simple tool to quickly generate epoch timestamps for URL queries. The date command can do this, but its syntax varies across implementations (GNU coreutils on Linux, BSD on macOS, and others), making it inconvenient for quick, portable use. This tool provides a fast and consistent way to generate epoch timestamps. Here's an example of how it can be used:
